@@ -2,6 +2,26 @@
 <search>
   <entry>
     <title>hexo框架butterfly主题如何增加友链</title>
+    <url>/2021/08/22/github%E4%B8%80%E7%9B%B4%E7%99%BB%E9%99%86%E4%B8%8D%E4%B8%8A%E5%8E%BB%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>由于github的网站服务器在美国，在国内经常抽风，有时一直登录不上去，在网上找了很多方法，网上各路大神给的方法就是更改hosts,目前觉得下面的方法还是比较靠谱的。</p>
+<h2 id="更改hosts文件，地址如下："><a href="#更改hosts文件，地址如下：" class="headerlink" title="更改hosts文件，地址如下："></a>更改hosts文件，地址如下：</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">C:\Windows\system32\drivers\ect</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="通过两个网站查到自己的IP-网站如下："><a href="#通过两个网站查到自己的IP-网站如下：" class="headerlink" title="通过两个网站查到自己的IP, 网站如下："></a>通过两个网站查到自己的IP, 网站如下：</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://github.com.ipaddress.com/ ➢➢➢[传送门](http://github.com.ipaddress.com/)</span><br><span class="line"></span><br><span class="line">http://github.global.ssl.fastly.net.ipaddress.com/ ➢➢➢[传送门](http://github.global.ssl.fastly.net.ipaddress.com/)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="将代码放到hosts末尾，保存、退出，格式如下："><a href="#将代码放到hosts末尾，保存、退出，格式如下：" class="headerlink" title="将代码放到hosts末尾，保存、退出，格式如下："></a>将代码放到hosts末尾，保存、退出，格式如下：</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Github Start</span><br><span class="line">140.82.113.4 github.com</span><br><span class="line">199.232.69.194 github.global.ssl.fastly.net</span><br><span class="line">Github End</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="win-R打开cmd-输入如下代码刷新缓存"><a href="#win-R打开cmd-输入如下代码刷新缓存" class="headerlink" title="win+R打开cmd,输入如下代码刷新缓存"></a>win+R打开cmd,输入如下代码刷新缓存</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ipconfig /flushdns (注意：ipconfig后面有一空格)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2>]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo框架butterfly主题如何增加友链</title>
     <url>/2021/08/20/hexo%E6%A1%86%E6%9E%B6butterfly%E4%B8%BB%E9%A2%98%E5%A6%82%E4%BD%95%E5%A2%9E%E5%8A%A0%E5%8F%8B%E9%93%BE/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本周我将hexo框架主题由next转换成butterfly，增加友链和next主题还是有所不同的，方法如下：</p>
 <h2 id="增加友链的方法"><a href="#增加友链的方法" class="headerlink" title="增加友链的方法"></a>增加友链的方法</h2><p>在hexo根目录下新建一个_data文件夹，在其文件夹下建一个link.yml文档，所有的友链均在link.yml文档里，格式如下：</p>
