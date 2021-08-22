@@ -1,0 +1,277 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>两个邮箱配置两个SSH | 刘兆斌の博客</title><meta name="author"><meta name="copyright"><meta name="format-detection" content="telephone=no"><meta name="theme-color"><meta name="description" content="一般来说,一台电脑上配置两个SSH密钥是很正常的嘛，两个邮箱对应两个SSH.假设原来在C盘中&#x2F;Users&#x2F;xxx&#x2F;.ssh目录下已经生成了一个密钥对： 12id_rsaid_rsa.pub 生成第二个key接下来我们生成第二个ssh key： ssh-keygen -t rsa -c “&amp;#x79;&amp;#x6f;&amp;#117;&amp;#114;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#x40;&amp;#x">
+<meta property="og:type" content="article">
+<meta property="og:title" content="两个邮箱配置两个SSH">
+<meta property="og:url" content="https://liuzhaobin.top/2020/04/13/%E4%B8%A4%E4%B8%AA%E9%82%AE%E7%AE%B1%E9%85%8D%E7%BD%AE%E4%B8%A4%E4%B8%AASSH/index.html">
+<meta property="og:site_name" content="刘兆斌の博客">
+<meta property="og:description" content="一般来说,一台电脑上配置两个SSH密钥是很正常的嘛，两个邮箱对应两个SSH.假设原来在C盘中&#x2F;Users&#x2F;xxx&#x2F;.ssh目录下已经生成了一个密钥对： 12id_rsaid_rsa.pub 生成第二个key接下来我们生成第二个ssh key： ssh-keygen -t rsa -c “&amp;#x79;&amp;#x6f;&amp;#117;&amp;#114;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#x40;&amp;#x">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://p.pstatp.com/origin/pgc-image/60835c6f1ddf47cb8a7d50f59ae22939">
+<meta property="article:published_time" content="2020-04-12T16:40:00.000Z">
+<meta property="article:modified_time" content="2020-05-24T20:49:10.000Z">
+<meta property="article:author" content="刘兆斌">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://p.pstatp.com/origin/pgc-image/60835c6f1ddf47cb8a7d50f59ae22939"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/code-anan/image/蜘蛛网万圣节.png"><link rel="canonical" href="https://liuzhaobin.top/2020/04/13/%E4%B8%A4%E4%B8%AA%E9%82%AE%E7%AE%B1%E9%85%8D%E7%BD%AE%E4%B8%A4%E4%B8%AASSH/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '两个邮箱配置两个SSH',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2020-05-25 04:49:10'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><div class="aplayer" data-id="2693598459" data-server="netease" data-type="playlist" data-fixed="true" data-listFolded="true" data-order="random" data-preload="none"></div><link rel="stylesheet" href="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css"><script src="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    document.addEventListener('pjax:complete', detectApple)})(window)</script><link rel="stylesheet" href="/css/iconfont.css"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="刘兆斌の博客" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://p.pstatp.com/origin/pgc-image/feaf0d6ed83b47a4ac614264790c2ee4" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-frog"></i><span> 生活</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/book/"><i class="fa-fw fas fa-address-book"></i><span> 书籍</span></a></li><li><a class="site-page child" href="/message/"><i class="fa-fw fas fa-sms"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://p.pstatp.com/origin/pgc-image/60835c6f1ddf47cb8a7d50f59ae22939')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">刘兆斌の博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-frog"></i><span> 生活</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/book/"><i class="fa-fw fas fa-address-book"></i><span> 书籍</span></a></li><li><a class="site-page child" href="/message/"><i class="fa-fw fas fa-sms"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">两个邮箱配置两个SSH</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-04-12T16:40:00.000Z" title="发表于 2020-04-13 00:40:00">2020-04-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-05-24T20:49:10.000Z" title="更新于 2020-05-25 04:49:10">2020-05-25</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="两个邮箱配置两个SSH"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>一般来说,一台电脑上配置两个SSH密钥是很正常的嘛，两个邮箱对应两个SSH.<br>假设原来在C盘中/Users/xxx/.ssh目录下已经生成了一个密钥对：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">id_rsa</span><br><span class="line">id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>生成第二个key<br>接下来我们生成第二个ssh key：</p>
+<p>ssh-keygen -t rsa -c “<a href="mailto:&#x79;&#x6f;&#117;&#114;&#109;&#97;&#x69;&#x6c;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#x2e;&#x63;&#111;&#x6d;">&#x79;&#x6f;&#117;&#114;&#109;&#97;&#x69;&#x6c;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a>“<br>这里不要一路回车，我们自己手动填写保存路径：</p>
+<p>Generating public/private rsa key pair.<br>Enter file in which to save the key (/c/Users/xxx/.ssh/id_rsa): /c/Users/xxx/.ssh/id_rsa_github<br>再按回车三次<br>这时我们返回电脑的C盘/Users/xxx/下id_rsa_github来区别原id_rsa。<br><img src="https://raw.githubusercontent.com/tivenny/pic/master/uklwigSl3n.png" alt="图1"></p>
+<p>完成之后，我们可以看到~/.ssh目录下多了两个文件，变成：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">id_rsa</span><br><span class="line"></span><br><span class="line">id_ras.pub</span><br><span class="line"></span><br><span class="line">id_rsa_github</span><br><span class="line"></span><br><span class="line">id_rsa_github.pub</span><br><span class="line"></span><br><span class="line">known_hosts</span><br></pre></td></tr></table></figure>
+<p>然后到[github](<a target="_blank" rel="noopener" href="https://github.com/%EF%BC%89">https://github.com/）</a> 上登陆自己的github帐号，点击右上角图像向下箭头，找到setting,进入找到ssh and GPG keys,如下两图所示，把C盘/Users/xxx/里的github_rsa.pub以记事本的方式打开，把里面的代码copy到下图的红框框中。</p>
+<p><img src="https://raw.githubusercontent.com/tivenny/pic/master/QQ%E5%9B%BE%E7%89%8720200412182803.png" alt="图2"></p>
+<p><img src="https://raw.githubusercontent.com/tivenny/pic/master/InkedQQ%E6%88%AA%E5%9B%BE20200412182432_LI.jpg" alt="图3"><br>ok! 完事</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">刘兆斌</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://liuzhaobin.top/2020/04/13/%E4%B8%A4%E4%B8%AA%E9%82%AE%E7%AE%B1%E9%85%8D%E7%BD%AE%E4%B8%A4%E4%B8%AASSH/">https://liuzhaobin.top/2020/04/13/%E4%B8%A4%E4%B8%AA%E9%82%AE%E7%AE%B1%E9%85%8D%E7%BD%AE%E4%B8%A4%E4%B8%AASSH/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://liuzhaobin.top" target="_blank">刘兆斌の博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://p.pstatp.com/origin/pgc-image/60835c6f1ddf47cb8a7d50f59ae22939" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/04/14/hugo%E5%BB%BA%E7%AB%99%E7%A8%8B%E5%BA%8F%EF%BC%88%E8%AE%B0%E7%89%A2%EF%BC%89/"><img class="prev-cover" src="https://p.pstatp.com/origin/pgc-image/60835c6f1ddf47cb8a7d50f59ae22939" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">hugo建站程序（记牢）</div></div></a></div><div class="next-post pull-right"><a href="/2020/04/06/hexo-admin/"><img class="next-cover" src="https://p.pstatp.com/origin/pgc-image/60835c6f1ddf47cb8a7d50f59ae22939" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info"> 我的建站经历</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://p.pstatp.com/origin/pgc-image/feaf0d6ed83b47a4ac614264790c2ee4" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">刘兆斌</div><div class="author-info__description">不喜欢和傻子呆在一起</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://weibo.com/5808481803/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo&amp;is_all=1"><i class="fab fa-weibo"></i><span>来踢我呀</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/kingguner/kingguner" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:tivenny@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/img/qq.jpg" target="_blank" title="QQ"><i class="iconfont icon-QQ"></i></a><a class="social-icon" href="/img/wechat.jpg" target="_blank" title="微信"><i class="iconfont icon-weixin"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/08/22/github%E4%B8%80%E7%9B%B4%E7%99%BB%E9%99%86%E4%B8%8D%E4%B8%8A%E5%8E%BB%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" title="github在国内时不时登录不上去的解决方法"><img src="https://p.pstatp.com/origin/pgc-image/98b9a4cd4dfc49b9970b907813dc0069" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="github在国内时不时登录不上去的解决方法"/></a><div class="content"><a class="title" href="/2021/08/22/github%E4%B8%80%E7%9B%B4%E7%99%BB%E9%99%86%E4%B8%8D%E4%B8%8A%E5%8E%BB%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" title="github在国内时不时登录不上去的解决方法">github在国内时不时登录不上去的解决方法</a><time datetime="2021-08-22T10:24:28.074Z" title="发表于 2021-08-22 18:24:28">2021-08-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/08/20/hexo%E6%A1%86%E6%9E%B6butterfly%E4%B8%BB%E9%A2%98%E5%A6%82%E4%BD%95%E5%A2%9E%E5%8A%A0%E5%8F%8B%E9%93%BE/" title="hexo框架butterfly主题如何增加友链"><img src="https://p.pstatp.com/origin/pgc-image/3817ca528bd44fa4a082a690c33bd5ec" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo框架butterfly主题如何增加友链"/></a><div class="content"><a class="title" href="/2021/08/20/hexo%E6%A1%86%E6%9E%B6butterfly%E4%B8%BB%E9%A2%98%E5%A6%82%E4%BD%95%E5%A2%9E%E5%8A%A0%E5%8F%8B%E9%93%BE/" title="hexo框架butterfly主题如何增加友链">hexo框架butterfly主题如何增加友链</a><time datetime="2021-08-20T02:36:06.441Z" title="发表于 2021-08-20 10:36:06">2021-08-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/08/20/windows%E4%B8%8Bhugo%E6%80%8E%E4%B9%88%E6%A0%B7%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/" title="windows下hugo怎么样部署到github上"><img src="https://p.pstatp.com/origin/pgc-image/60835c6f1ddf47cb8a7d50f59ae22939" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="windows下hugo怎么样部署到github上"/></a><div class="content"><a class="title" href="/2021/08/20/windows%E4%B8%8Bhugo%E6%80%8E%E4%B9%88%E6%A0%B7%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/" title="windows下hugo怎么样部署到github上">windows下hugo怎么样部署到github上</a><time datetime="2021-08-20T00:22:37.862Z" title="发表于 2021-08-20 08:22:37">2021-08-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/08/20/Microsoft%20store%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" title="Microsoft store无法打开的解决方案"><img src="https://p.pstatp.com/origin/pgc-image/60835c6f1ddf47cb8a7d50f59ae22939" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Microsoft store无法打开的解决方案"/></a><div class="content"><a class="title" href="/2021/08/20/Microsoft%20store%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" title="Microsoft store无法打开的解决方案">Microsoft store无法打开的解决方案</a><time datetime="2021-08-20T00:22:37.815Z" title="发表于 2021-08-20 08:22:37">2021-08-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/08/20/hexo-admin%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86/" title="hexo-admin后台管理"><img src="https://p.pstatp.com/origin/pgc-image/60835c6f1ddf47cb8a7d50f59ae22939" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo-admin后台管理"/></a><div class="content"><a class="title" href="/2021/08/20/hexo-admin%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86/" title="hexo-admin后台管理">hexo-admin后台管理</a><time datetime="2021-08-20T00:22:37.689Z" title="发表于 2021-08-20 08:22:37">2021-08-20</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 刘兆斌</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'fu4eAzY6lqkepbN1NE9jq4jL-MdYXbMMI',
+      appKey: '9F42rCob8PR3NAgWubYcij3R',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'en',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><div class="aplayer" data-id="2693598459" data-server="netease" data-type="playlist" data-fixed="true" data-listFolded="true" data-order="random" data-preload="none"></div><link rel="stylesheet" href="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css"><script src="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.removeEventListener('scroll', window.tocScrollFn)
+  window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
