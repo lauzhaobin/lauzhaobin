@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo框架butterfly主题如何增加友链, 澜湖书生の博客">
+    <meta name="keywords" content="github在国内时不时登录不上去的解决方法, 澜湖书生の博客">
     <meta name="description" content="不喜欢和傻子呆在一起">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo框架butterfly主题如何增加友链 | 澜湖书生の博客</title>
+    <title>github在国内时不时登录不上去的解决方法 | 澜湖书生の博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -440,12 +440,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo框架butterfly主题如何增加友链</h1>
+                    <h1 class="description center-align post-title">github在国内时不时登录不上去的解决方法</h1>
                 </div>
             </div>
         </div>
@@ -559,9 +559,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/github/">
+                                <span class="chip bg-color">github</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -582,7 +586,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-23
+                    2022-01-27
                 </div>
                 
 
@@ -596,7 +600,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    191
+                    172
                 </div>
                 
 
@@ -623,15 +627,15 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本周我将hexo框架主题由next转换成butterfly，增加友链和next主题还是有所不同的，方法如下：</p>
-<h2 id="增加友链的方法"><a href="#增加友链的方法" class="headerlink" title="增加友链的方法"></a>增加友链的方法</h2><p>在hexo根目录下新建一个_data文件夹，在其文件夹下建一个link.yml文档，所有的友链均在link.yml文档里，格式如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">- class_name: </span><br><span class="line">  class_desc:</span><br><span class="line">  link_list:</span><br><span class="line">    - name:  网站1         </span><br><span class="line">      link: https://www.xxxxxx.com/</span><br><span class="line">      avatar:    </span><br><span class="line">      descr:                  </span><br><span class="line">    - name: 网站2               </span><br><span class="line">      link: https://www.xxxxx.cn/</span><br><span class="line">      avatar:  </span><br><span class="line">      descr:              </span><br><span class="line"></span><br><span class="line">      for example:</span><br><span class="line">    - name: 大学MOOC网</span><br><span class="line">      link: https://www.icourse163.org/</span><br><span class="line">      avatar: https://p.pstatp.com/origin/pgc-image/4b8bc0e4a4ac444f984ea95aa601d8a9</span><br><span class="line">      descr: 热爱分享 热爱学习   </span><br></pre></td></tr></table></figure>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>由于github的网站服务器在美国，在国内经常抽风，有时一直登录不上去，在网上找了很多方法，网上各路大神给的方法就是更改hosts,目前觉得下面的方法还是比较靠谱的。</p>
+<h2 id="更改hosts文件，地址如下："><a href="#更改hosts文件，地址如下：" class="headerlink" title="更改hosts文件，地址如下："></a>更改hosts文件，地址如下：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:\Windows\system32\drivers\ect</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>你会找到source/link/index.md这个文件<br>修改这个文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">title:友情链接</span><br><span class="line">date: 2018-06-07 22:17:49 </span><br><span class="line">type: &quot;link&quot; </span><br><span class="line">comments: false</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="通过两个网站查到自己的IP-网站如下："><a href="#通过两个网站查到自己的IP-网站如下：" class="headerlink" title="通过两个网站查到自己的IP, 网站如下："></a>通过两个网站查到自己的IP, 网站如下：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">http://github.com.ipaddress.com/ </span><br><span class="line">http://github.global.ssl.fastly.net.ipaddress.com/ </span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
+<h2 id="将代码放到hosts末尾，保存、退出，格式如下："><a href="#将代码放到hosts末尾，保存、退出，格式如下：" class="headerlink" title="将代码放到hosts末尾，保存、退出，格式如下："></a>将代码放到hosts末尾，保存、退出，格式如下：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Github Start</span><br><span class="line">140.82.113.4 github.com</span><br><span class="line">199.232.69.194 github.global.ssl.fastly.net</span><br><span class="line">Github End</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h2 id="把新建的网页上传、部署"><a href="#把新建的网页上传、部署" class="headerlink" title="把新建的网页上传、部署"></a>把新建的网页上传、部署</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g </span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<h2 id="win-R打开cmd-输入如下代码刷新缓存"><a href="#win-R打开cmd-输入如下代码刷新缓存" class="headerlink" title="win+R打开cmd,输入如下代码刷新缓存"></a>win+R打开cmd,输入如下代码刷新缓存</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ipconfig /flushdns (注意：ipconfig后面有一空格)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2>
                 
             </div>
@@ -648,7 +652,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">Tivenny</a>
+                    <a href="/about" rel="external nofollow noreferrer">刘兆斌</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -658,7 +662,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://liuzhaobin.top/2021/08/23/hexo%E6%A1%86%E6%9E%B6butterfly%E4%B8%BB%E9%A2%98%E5%A6%82%E4%BD%95%E5%A2%9E%E5%8A%A0%E5%8F%8B%E9%93%BE/">https://liuzhaobin.top/2021/08/23/hexo%E6%A1%86%E6%9E%B6butterfly%E4%B8%BB%E9%A2%98%E5%A6%82%E4%BD%95%E5%A2%9E%E5%8A%A0%E5%8F%8B%E9%93%BE/</a>
+                    <a href="https://liuzhaobin.top/2022/01/27/github%E4%B8%80%E7%9B%B4%E7%99%BB%E9%99%86%E4%B8%8D%E4%B8%8A%E5%8E%BB%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">https://liuzhaobin.top/2022/01/27/github%E4%B8%80%E7%9B%B4%E7%99%BB%E9%99%86%E4%B8%8D%E4%B8%8A%E5%8E%BB%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -671,7 +675,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">Tivenny</a>
+                    <a href="/about" target="_blank">刘兆斌</a>
                     !
                 </span>
             </div>
@@ -695,7 +699,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/github/">
+                                    <span class="chip bg-color">github</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1135,13 +1143,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/08/23/Microsoft%20store%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">
+                <a href="/2022/01/27/windows%E4%B8%8Bhugo%E6%80%8E%E4%B9%88%E6%A0%B7%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Microsoft store无法打开的解决方案">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="windows下hugo怎么样部署到github上">
                         
-                        <span class="card-title">Microsoft store无法打开的解决方案</span>
+                        <span class="card-title">windows下hugo怎么样部署到github上</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1152,7 +1160,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-23
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-27
                         </span>
                         <span class="publish-author">
                             
@@ -1176,13 +1184,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/08/23/hexo-admin%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86/">
+                <a href="/2020/05/11/Windows%E5%AD%90%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%AE%89%E8%A3%85Ubuntu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="hexo-admin后台管理">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Windows子系统下安装Ubuntu">
                         
-                        <span class="card-title">hexo-admin后台管理</span>
+                        <span class="card-title">Windows子系统下安装Ubuntu</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1193,7 +1201,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-23
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-11
                             </span>
                         <span class="publish-author">
                             
@@ -1206,6 +1214,14 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Ubuntu/">
+                        <span class="chip bg-color">Ubuntu</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1395,7 +1411,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2021</span>
+                <span id="year">2019-2022</span>
             
             <span id="year">2019</span>
             <a href="/about" target="_blank">澜湖书生</a>
