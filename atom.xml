@@ -6,7 +6,7 @@
   <link href="https://liuzhaobin.top/atom.xml" rel="self"/>
   
   <link href="https://liuzhaobin.top/"/>
-  <updated>2021-08-22T11:26:18.000Z</updated>
+  <updated>2020-05-24T20:49:10.000Z</updated>
   <id>https://liuzhaobin.top/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>hexo框架butterfly主题如何增加友链</title>
-    <link href="https://liuzhaobin.top/2022/01/27/hexo%E6%A1%86%E6%9E%B6butterfly%E4%B8%BB%E9%A2%98%E5%A6%82%E4%BD%95%E5%A2%9E%E5%8A%A0%E5%8F%8B%E9%93%BE/"/>
-    <id>https://liuzhaobin.top/2022/01/27/hexo%E6%A1%86%E6%9E%B6butterfly%E4%B8%BB%E9%A2%98%E5%A6%82%E4%BD%95%E5%A2%9E%E5%8A%A0%E5%8F%8B%E9%93%BE/</id>
-    <published>2022-01-27T11:33:15.496Z</published>
-    <updated>2021-08-22T11:26:18.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本周我将hexo框架主题由next转换成butterfly，增加友链和next主题还是有所不同的，方法如下：</p><h2 id="增加友链的方法"><a href="#增加友链的方法" class="headerlink" title="增加友链的方法"></a>增加友链的方法</h2><p>在hexo根目录下新建一个_data文件夹，在其文件夹下建一个link.yml文档，所有的友链均在link.yml文档里，格式如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">- class_name: </span><br><span class="line">  class_desc:</span><br><span class="line">  link_list:</span><br><span class="line">    - name:  网站1         </span><br><span class="line">      link: https://www.xxxxxx.com/</span><br><span class="line">      avatar:    </span><br><span class="line">      descr:                  </span><br><span class="line">    - name: 网站2               </span><br><span class="line">      link: https://www.xxxxx.cn/</span><br><span class="line">      avatar:  </span><br><span class="line">      descr:              </span><br><span class="line"></span><br><span class="line">      for example:</span><br><span class="line">    - name: 大学MOOC网</span><br><span class="line">      link: https://www.icourse163.org/</span><br><span class="line">      avatar: https://p.pstatp.com/origin/pgc-image/4b8bc0e4a4ac444f984ea95aa601d8a9</span><br><span class="line">      descr: 热爱分享 热爱学习   </span><br></pre></td></tr></table></figure><p>你会找到source/link/index.md这个文件<br>修改这个文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">title:友情链接</span><br><span class="line">date: 2018-06-07 22:17:49 </span><br><span class="line">type: &quot;link&quot; </span><br><span class="line">comments: false</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="把新建的网页上传、部署"><a href="#把新建的网页上传、部署" class="headerlink" title="把新建的网页上传、部署"></a>把新建的网页上传、部署</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g </span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本周我将hexo框架主题由next转换成butterfly，增加友链和next主题还是有所不同的，方法如下：&lt;/p&gt;
-&lt;h2 id=&quot;增加友</summary>
-      
-    
-    
-    
-    <category term="技术分享" scheme="https://liuzhaobin.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>Microsoft store无法打开的解决方案</title>
@@ -77,6 +54,29 @@
     <summary type="html">&lt;p&gt;hexo一直是不能进行后台管理的，但hexo有一个插件可以进行后台管理，那就是hexo-admin，下面来介绍它的安装和应用：&lt;/p&gt;
 &lt;p&gt;一 安装&lt;/p&gt;
 &lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=</summary>
+      
+    
+    
+    
+    <category term="技术分享" scheme="https://liuzhaobin.top/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo框架butterfly主题如何增加友链</title>
+    <link href="https://liuzhaobin.top/2022/01/27/hexo%E6%A1%86%E6%9E%B6butterfly%E4%B8%BB%E9%A2%98%E5%A6%82%E4%BD%95%E5%A2%9E%E5%8A%A0%E5%8F%8B%E9%93%BE/"/>
+    <id>https://liuzhaobin.top/2022/01/27/hexo%E6%A1%86%E6%9E%B6butterfly%E4%B8%BB%E9%A2%98%E5%A6%82%E4%BD%95%E5%A2%9E%E5%8A%A0%E5%8F%8B%E9%93%BE/</id>
+    <published>2022-01-27T11:33:15.496Z</published>
+    <updated>2021-08-22T11:26:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本周我将hexo框架主题由next转换成butterfly，增加友链和next主题还是有所不同的，方法如下：</p><h2 id="增加友链的方法"><a href="#增加友链的方法" class="headerlink" title="增加友链的方法"></a>增加友链的方法</h2><p>在hexo根目录下新建一个_data文件夹，在其文件夹下建一个link.yml文档，所有的友链均在link.yml文档里，格式如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">- class_name: </span><br><span class="line">  class_desc:</span><br><span class="line">  link_list:</span><br><span class="line">    - name:  网站1         </span><br><span class="line">      link: https://www.xxxxxx.com/</span><br><span class="line">      avatar:    </span><br><span class="line">      descr:                  </span><br><span class="line">    - name: 网站2               </span><br><span class="line">      link: https://www.xxxxx.cn/</span><br><span class="line">      avatar:  </span><br><span class="line">      descr:              </span><br><span class="line"></span><br><span class="line">      for example:</span><br><span class="line">    - name: 大学MOOC网</span><br><span class="line">      link: https://www.icourse163.org/</span><br><span class="line">      avatar: https://p.pstatp.com/origin/pgc-image/4b8bc0e4a4ac444f984ea95aa601d8a9</span><br><span class="line">      descr: 热爱分享 热爱学习   </span><br></pre></td></tr></table></figure><p>你会找到source/link/index.md这个文件<br>修改这个文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">title:友情链接</span><br><span class="line">date: 2018-06-07 22:17:49 </span><br><span class="line">type: &quot;link&quot; </span><br><span class="line">comments: false</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="把新建的网页上传、部署"><a href="#把新建的网页上传、部署" class="headerlink" title="把新建的网页上传、部署"></a>把新建的网页上传、部署</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g </span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本周我将hexo框架主题由next转换成butterfly，增加友链和next主题还是有所不同的，方法如下：&lt;/p&gt;
+&lt;h2 id=&quot;增加友</summary>
       
     
     
@@ -187,7 +187,7 @@
     <published>2020-04-12T16:40:00.000Z</published>
     <updated>2020-05-24T20:49:10.000Z</updated>
     
-    <content type="html"><![CDATA[<p>一般来说,一台电脑上配置两个SSH密钥是很正常的嘛，两个邮箱对应两个SSH.<br>假设原来在C盘中/Users/xxx/.ssh目录下已经生成了一个密钥对：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">id_rsa</span><br><span class="line">id_rsa.pub</span><br></pre></td></tr></table></figure><p>生成第二个key<br>接下来我们生成第二个ssh key：</p><p>ssh-keygen -t rsa -c “<a href="mailto:&#121;&#111;&#117;&#x72;&#x6d;&#97;&#105;&#x6c;&#64;&#x67;&#109;&#x61;&#105;&#108;&#46;&#x63;&#111;&#109;">&#121;&#111;&#117;&#x72;&#x6d;&#97;&#105;&#x6c;&#64;&#x67;&#109;&#x61;&#105;&#108;&#46;&#x63;&#111;&#109;</a>“<br>这里不要一路回车，我们自己手动填写保存路径：</p><p>Generating public/private rsa key pair.<br>Enter file in which to save the key (/c/Users/xxx/.ssh/id_rsa): /c/Users/xxx/.ssh/id_rsa_github<br>再按回车三次<br>这时我们返回电脑的C盘/Users/xxx/下id_rsa_github来区别原id_rsa。<br><img src="https://raw.githubusercontent.com/tivenny/pic/master/uklwigSl3n.png" alt="图1"></p><p>完成之后，我们可以看到~/.ssh目录下多了两个文件，变成：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">id_rsa</span><br><span class="line"></span><br><span class="line">id_ras.pub</span><br><span class="line"></span><br><span class="line">id_rsa_github</span><br><span class="line"></span><br><span class="line">id_rsa_github.pub</span><br><span class="line"></span><br><span class="line">known_hosts</span><br></pre></td></tr></table></figure><p>然后到[github](<a href="https://github.com/%EF%BC%89">https://github.com/）</a> 上登陆自己的github帐号，点击右上角图像向下箭头，找到setting,进入找到ssh and GPG keys,如下两图所示，把C盘/Users/xxx/里的github_rsa.pub以记事本的方式打开，把里面的代码copy到下图的红框框中。</p><p><img src="https://raw.githubusercontent.com/tivenny/pic/master/QQ%E5%9B%BE%E7%89%8720200412182803.png" alt="图2"></p><p><img src="https://raw.githubusercontent.com/tivenny/pic/master/InkedQQ%E6%88%AA%E5%9B%BE20200412182432_LI.jpg" alt="图3"><br>ok! 完事</p>]]></content>
+    <content type="html"><![CDATA[<p>一般来说,一台电脑上配置两个SSH密钥是很正常的嘛，两个邮箱对应两个SSH.<br>假设原来在C盘中/Users/xxx/.ssh目录下已经生成了一个密钥对：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">id_rsa</span><br><span class="line">id_rsa.pub</span><br></pre></td></tr></table></figure><p>生成第二个key<br>接下来我们生成第二个ssh key：</p><p>ssh-keygen -t rsa -c “<a href="mailto:&#x79;&#x6f;&#117;&#x72;&#109;&#97;&#105;&#x6c;&#x40;&#103;&#x6d;&#97;&#x69;&#108;&#46;&#99;&#111;&#109;">&#x79;&#x6f;&#117;&#x72;&#109;&#97;&#105;&#x6c;&#x40;&#103;&#x6d;&#97;&#x69;&#108;&#46;&#99;&#111;&#109;</a>“<br>这里不要一路回车，我们自己手动填写保存路径：</p><p>Generating public/private rsa key pair.<br>Enter file in which to save the key (/c/Users/xxx/.ssh/id_rsa): /c/Users/xxx/.ssh/id_rsa_github<br>再按回车三次<br>这时我们返回电脑的C盘/Users/xxx/下id_rsa_github来区别原id_rsa。<br><img src="https://raw.githubusercontent.com/tivenny/pic/master/uklwigSl3n.png" alt="图1"></p><p>完成之后，我们可以看到~/.ssh目录下多了两个文件，变成：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">id_rsa</span><br><span class="line"></span><br><span class="line">id_ras.pub</span><br><span class="line"></span><br><span class="line">id_rsa_github</span><br><span class="line"></span><br><span class="line">id_rsa_github.pub</span><br><span class="line"></span><br><span class="line">known_hosts</span><br></pre></td></tr></table></figure><p>然后到[github](<a href="https://github.com/%EF%BC%89">https://github.com/）</a> 上登陆自己的github帐号，点击右上角图像向下箭头，找到setting,进入找到ssh and GPG keys,如下两图所示，把C盘/Users/xxx/里的github_rsa.pub以记事本的方式打开，把里面的代码copy到下图的红框框中。</p><p><img src="https://raw.githubusercontent.com/tivenny/pic/master/QQ%E5%9B%BE%E7%89%8720200412182803.png" alt="图2"></p><p><img src="https://raw.githubusercontent.com/tivenny/pic/master/InkedQQ%E6%88%AA%E5%9B%BE20200412182432_LI.jpg" alt="图3"><br>ok! 完事</p>]]></content>
     
     
       
